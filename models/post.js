@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // Ensure User model is registered
-require('./User');
+require('./user');
 
 const postSchema = new mongoose.Schema({
   user: {
