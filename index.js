@@ -14,7 +14,7 @@ app.use('/api/posts', postRoutes);
 // MongoDB connection
 const MONGO_URI = 'mongodb+srv://atifobjects:mn14K2zHIoHALbrN@cluster0.s7rhz.mongodb.net/';
 mongoose
-  .connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(MONGO_URI)
   .then(() => console.log('MongoDB connected'))
   .catch((err) => console.log(err));
 
